@@ -1,0 +1,305 @@
+/* ===========================
+   Navbar Header Styles
+   =========================== */
+
+#navbar {
+    background: #ffffff;
+    padding: 0 0 0.75rem 0;
+    max-height: 90px;
+    width: 100%;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.365);
+    transition: all 0.3s ease;
+    z-index: 1030;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.368);
+}
+
+#navbar .container-fluid {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* ===========================
+   Toggle Button
+   =========================== */
+.navbar-toggler {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler:hover {
+    background: #9898983b !important;
+    border-color: #667eea !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(102, 126, 234, 0.295);
+}
+/* 
+.navbar-toggler:hover #hambur {
+    color: white !important;
+} */
+
+.navbar-toggler:active {
+    transform: translateY(0);
+}
+
+/* ===========================
+   Logo and Brand
+   =========================== */
+.brand-link {
+    margin: 0 auto;
+    transition: all 0.3s ease;
+}
+
+.brand-link:hover {
+    transform: translateY(-1px);
+}
+
+.brand-logo {
+    height: 70px;
+    width: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.brand-link:hover .brand-logo {
+    transform: scale(1.02);
+}
+
+.brand-content {
+    color: #2d3748;
+}
+
+.brand-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+    background: linear-gradient(135deg, #333333 0%, #00183bf1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.brand-subtitle {
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    color: #718096;
+    text-transform: uppercase;
+}
+
+/* ===========================
+   User Dropdown
+   =========================== */
+.avatar-circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #333333 0%, #4a73b1bd 100%);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border: 2px solid rgba(102, 126, 234, 0.2);
+    transition: all 0.3s ease;
+}
+
+.user-avatar-large {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #333333 0%, #4a73b1bd 100%);
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    border: 3px solid rgba(102, 126, 234, 0.2);
+    margin: 0 auto;
+}
+
+.btn-user-profile {
+    background: #f8f9fa;
+    border: 1px solid #e9ecef;
+    color: #2d3748;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+    padding: 0.35rem 0.75rem;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.btn-user-profile:hover {
+    background: rgba(126, 126, 126, 0.637) !important;
+    border-color: rgba(255, 255, 255, 0.5) !important;
+    transform: translateY(-1px), scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.btn-user-profile:active {
+    transform: translateY(0);
+}
+
+.btn-user-profile .username {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: #2d3748;
+    transition: color 0.3s ease;
+}
+
+.dropdown-arrow {
+    font-size: 0.75rem;
+    transition: all 0.3s ease;
+    color: #718096;
+}
+
+.btn-user-profile:hover .username {
+    color: white;
+}
+.btn-user-profile:hover .dropdown-arrow {
+    color: white;
+}
+.btn-user-profile .avatar-circle:hover {
+    border-color: rgba(255, 255, 255, 0.6);
+    transform: scale(1.05);
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+}
+
+/* ===========================
+   Custom Dropdown Menu
+   =========================== */
+
+.custom-dropdown-menu {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    min-width: 280px;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 0.5rem;
+    z-index: 1050;
+    transform-origin: top right;
+}
+
+.dropdown-header-custom {
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+    background: linear-gradient(
+        135deg,
+        rgba(102, 126, 234, 0.1) 0%,
+        rgba(118, 75, 162, 0.1) 100%
+    );
+}
+
+.dropdown-header-custom .text-dark {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+}
+
+.dropdown-header-custom .text-muted {
+    font-size: 0.8rem;
+}
+
+.dropdown-divider {
+    margin: 0.5rem 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* ========== Dropdown Items ========== */
+.dropdown-item-custom {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    color: #333;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: none;
+    background: transparent;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+}
+
+.dropdown-item-custom i {
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.dropdown-item-custom:hover {
+    background: rgba(102, 126, 234, 0.08);
+    color: #667eea;
+    transform: translateX(2px);
+}
+
+.dropdown-item-danger {
+    color: #dc3545;
+}
+
+.dropdown-item-danger:hover {
+    background: rgba(220, 53, 69, 0.08);
+    color: #dc3545;
+}
+
+/* ========== Responsive Styles ========== */
+@media (max-width: 768px) {
+    .brand-title {
+        font-size: 1rem;
+    }
+
+    .brand-subtitle {
+        font-size: 0.65rem;
+    }
+
+    .brand-logo {
+        height: 32px;
+    }
+
+    .custom-dropdown-menu {
+        min-width: 260px;
+        right: -0.5rem;
+    }
+
+    .avatar-circle {
+        width: 32px;
+        height: 32px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #navbar .container-fluid {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .brand-content {
+        max-width: 180px;
+    }
+
+    .custom-dropdown-menu {
+        min-width: calc(100vw - 2rem);
+        right: 0;
+        left: 0;
+        margin: 0 1rem;
+    }
+}
+
+/* ========== Notification Wrapper ========== */
+.notification-wrapper {
+    display: flex;
+    align-items: center;
+}
