@@ -1,88 +1,47 @@
-# dbproject-perwira-dorm-storage-system
+# 🏨 Perwira Dorm Storage System
 
-Perwira Dorm Storage System
-This is a web-based storage management application built with the Laravel framework. This system allows students to manage their belongings and dormitory staff to oversee storage logistics.
+A robust web application built with **Laravel** to manage dormitory storage logistics. This system allows students to apply for storage space and helps administrators manage inventory and records.
 
-🛠 Prerequisites
-Before starting, ensure you have the following software installed:
+---
 
-XAMPP (PHP 8.1 or higher & MySQL)
+## 🛠 Prerequisites
 
-Composer (PHP Package Manager)
+Ensure you have the following installed before proceeding:
 
-Node.js & NPM (Frontend Asset Manager)
+* **XAMPP** (PHP 8.1+ & MySQL)
+* **Composer** (PHP Package Manager)
+* **Node.js & NPM** (Frontend Asset Manager)
+* **Git**
 
-Git
+---
 
-🚀 Installation & Setup
-1. Clone the Project
-Open your terminal and run:
+## 🚀 Installation & Setup
 
-Bash
-git clone https://github.com/Yogenn14/dbproject-perwira-dorm-storage-system.git
+Follow these steps carefully to get the project running on your local machine:
+
+### 1. Clone the Project
+Open your terminal (PowerShell or Git Bash) and run:
+```bash
+git clone [https://github.com/Yogenn14/dbproject-perwira-dorm-storage-system.git](https://github.com/Yogenn14/dbproject-perwira-dorm-storage-system.git)
 cd dbproject-perwira-dorm-storage-system
-2. Install PHP Dependencies
-If you have a newer version of PHP (like 8.2 or 8.3), use the ignore flag:
-
-Bash
 composer install --ignore-platform-reqs
-3. Install Frontend Dependencies
-Bash
-npm install
-4. Configure Environment
-Create your local .env file from the template:
 
-Bash
+npm install
 cp .env.example .env
 php artisan key:generate
-Note: Open the .env file in VS Code and ensure DB_DATABASE matches the name of the database you create in XAMPP (e.g., perwira_dorm).
+```
 
-5. Database Setup
-Start Apache and MySQL in your XAMPP Control Panel.
+Start Apache and MySQL in the XAMPP Control Panel.
 
 Go to http://localhost/phpmyadmin and create a new database.
 
-Run the migrations to create the tables:
+Run the migrations:
 
-Bash
+```bash
+
 php artisan migrate
-⚠️ Troubleshooting (Common Fixes)
-Missing Extensions (fileinfo, gd, zip)
-If Composer gives an error about missing extensions, you must enable them in XAMPP:
+```
 
-Open C:\xampp\php\php.ini.
-
-Remove the semicolon (;) from the start of these lines:
-
-extension=fileinfo
-
-extension=gd
-
-extension=zip
-
-Restart your terminal and XAMPP.
-
-"mysqli.so" Warning on Windows
-If you see a warning about a .so library:
-
-Open php.ini.
-
-Delete any line that contains /path/to/extension/mysqli.so.
-
-Ensure extension_dir = "C:\xampp\php\ext" is correctly set.
-
-🏃 How to Run the App
-You must run two terminals at the same time:
-
-Terminal 1 (Backend Server):
-
-Bash
-php artisan serve
-Terminal 2 (Frontend Assets):
-
-Bash
-npm run dev
-Access the site at: http://127.0.0.1:8000
-
-📄 License
-Developed for the Database Course Project at UTHM.
+Terminal,Command,Purpose
+Terminal A,php artisan serve,Starts the PHP Backend (Port 8000)
+Terminal B,npm run dev,Starts the Vite Frontend (Port 5173)
