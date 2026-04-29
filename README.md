@@ -43,5 +43,13 @@ php artisan migrate
 ```
 
 Terminal,Command,Purpose
-Terminal A,php artisan serve,Starts the PHP Backend (Port 8000)
-Terminal B,npm run dev,Starts the Vite Frontend (Port 5173)
+Terminal A,
+```bash
+php artisan serve
+```
+Starts the PHP Backend (Port 8000)
+Terminal B,
+```bash
+npm run dev
+```
+Starts the Vite Frontend (Port 5173)
