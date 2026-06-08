@@ -72,7 +72,7 @@
                                                     class="text-danger">*</span></label>
                                             <input type="text" id="name" wire:model="name"
                                                 class="form-control @error('name') is-invalid @enderror"
-                                                placeholder="e.g., Lau Jin Xi">
+                                                placeholder="e.g., Yogenthirran Jagathesan">
                                             @error('name')
                                                 <div class="invalid-feedback">{{ $message }}</div>
                                             @enderror
